@@ -1557,7 +1557,6 @@ C {ammeter.sym} 2020 500 0 0 {name=Iup}
 C {ammeter.sym} 2830 400 0 0 {name=Iup1}
 C {ammeter.sym} 2020 1020 0 0 {name=Idn}
 C {ammeter.sym} 2830 920 0 0 {name=Idn1}
-C {/home/kenrendell/Playground/IC-design/PLL/charge-pump-amplifier.sym} 1930 700 0 1 {name=A0}
 C {lab_pin.sym} 2020 780 0 0 {name=p15 sig_type=std_logic lab=gnd}
 C {lab_pin.sym} 2020 640 1 0 {name=p16 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 1870 850 1 0 {name=p17 sig_type=std_logic lab=vdd}
@@ -1611,3 +1610,4 @@ C {lab_pin.sym} 1570 460 0 0 {name=p50 sig_type=std_logic lab=up}
 C {lab_pin.sym} 2410 460 0 0 {name=p5 sig_type=std_logic lab=upb}
 C {lab_pin.sym} 2540 460 0 0 {name=p6 sig_type=std_logic lab=up}
 C {lab_pin.sym} 3060 260 0 0 {name=p7 sig_type=std_logic lab=upb}
+C {/home/kenrendell/Playground/phase-locked-loop/charge-pump/charge-pump-amplifier.sym} 1930 700 0 1 {name=A1}
