@@ -206,13 +206,13 @@ lab=#net15}
 N 1710 460 1720 460 {
 lab=upb}
 N 2140 420 2140 440 {
-lab=upb}
+lab=#net13}
 N 2180 500 2190 500 {
-lab=upb}
+lab=#net13}
 N 2190 440 2190 500 {
-lab=upb}
+lab=#net13}
 N 2140 440 2190 440 {
-lab=upb}
+lab=#net13}
 N 1870 420 2020 420 {
 lab=#net15}
 N 2020 420 2080 420 {
@@ -220,11 +220,9 @@ lab=#net15}
 N 2080 390 2080 420 {
 lab=#net15}
 N 1830 390 1830 460 {
-lab=upb}
-N 1720 460 1830 460 {
-lab=upb}
+lab=#net13}
 N 1830 440 2140 440 {
-lab=upb}
+lab=#net13}
 N 2280 420 2280 460 {
 lab=#net16}
 N 1860 290 1860 300 {
@@ -292,7 +290,7 @@ lab=#net17}
 N 2590 520 2620 520 {
 lab=#net17}
 N 2460 520 2530 520 {
-lab=VOUT}
+lab=vout}
 N 2280 460 2360 460 {
 lab=#net16}
 N 2490 300 2490 400 {
@@ -388,7 +386,7 @@ lab=#net23}
 N 1790 980 1830 980 {
 lab=#net20}
 N 2460 920 2530 920 {
-lab=VOUT}
+lab=vout}
 N 2560 920 2590 920 {
 lab=#net24}
 N 2400 920 2430 920 {
@@ -418,7 +416,7 @@ lab=#net21}
 N 2280 980 2360 980 {
 lab=#net23}
 N 2490 760 2490 920 {
-lab=VOUT}
+lab=vout}
 N 2940 880 2940 890 {
 lab=vdd}
 N 2830 880 2940 880 {
@@ -566,7 +564,7 @@ lab=#net10}
 N 1660 520 1660 640 {
 lab=#net10}
 N 2490 520 2490 640 {
-lab=VOUT}
+lab=vout}
 N 3210 300 3210 420 {
 lab=#net14}
 N 1310 500 1310 620 {
@@ -576,7 +574,7 @@ lab=#net5}
 N 1660 640 1660 760 {
 lab=#net10}
 N 2490 640 2490 760 {
-lab=VOUT}
+lab=vout}
 N 3210 420 3210 540 {
 lab=#net14}
 N 990 590 990 710 {
@@ -590,7 +588,7 @@ lab=gnd}
 N 2020 640 2020 660 {
 lab=vdd}
 N 2080 680 2490 680 {
-lab=VOUT}
+lab=vout}
 N 1660 710 1940 710 {
 lab=#net10}
 N 1310 710 1660 710 {
@@ -622,35 +620,23 @@ lab=gnd}
 N 1870 320 1870 340 {
 lab=vdd}
 N 2490 680 2700 680 {
-lab=VOUT}
+lab=vout}
 N 2670 680 2670 720 {
-lab=VOUT}
+lab=vout}
 N 2670 780 2670 820 {
 lab=gnd}
 N 580 70 600 70 {
 lab=vdd}
 N 420 1340 440 1340 {
 lab=gnd}
-N 470 570 510 570 {
-lab=dn}
-N 470 410 510 410 {
-lab=VDD}
-N 470 450 510 450 {
-lab=GND}
 N 2540 980 2550 980 {
 lab=dn}
 N 1570 980 1580 980 {
 lab=dn}
-N 470 610 510 610 {
-lab=DNB}
 N 1700 980 1710 980 {
 lab=dnb}
 N 2410 980 2420 980 {
 lab=dnb}
-N 470 530 510 530 {
-lab=UPB}
-N 470 490 510 490 {
-lab=UP}
 N 1700 460 1710 460 {
 lab=upb}
 N 1570 460 1580 460 {
@@ -725,6 +711,8 @@ N 2080 940 2080 950 {
 lab=#net22}
 N 2080 950 2100 950 {
 lab=#net22}
+N 1790 460 1830 460 {
+lab=#net13}
 C {sky130_fd_pr/nfet_01v8.sym} 460 1170 0 1 {name=M1
 L=0.15
 W=1
@@ -1579,35 +1567,29 @@ C {lab_pin.sym} 2830 870 1 0 {name=p29 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 2830 350 1 0 {name=p30 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 2730 560 0 0 {name=p31 sig_type=std_logic lab=gnd}
 C {lab_pin.sym} 1870 320 2 0 {name=p32 sig_type=std_logic lab=vdd}
-C {iopin.sym} 2700 680 0 0 {name=p33 lab=VOUT}
+C {iopin.sym} 2700 680 0 0 {name=p33 lab=vout}
 C {sky130_fd_pr/cap_mim_m3_2.sym} 2670 750 0 0 {name=C1 model=cap_mim_m3_2 W=1 L=1 MF=1 spiceprefix=X}
 C {lab_pin.sym} 2670 820 0 0 {name=p34 sig_type=std_logic lab=gnd}
 C {lab_pin.sym} 580 70 0 0 {name=p35 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 420 1340 0 0 {name=p36 sig_type=std_logic lab=gnd}
-C {lab_pin.sym} 510 570 2 0 {name=p37 sig_type=std_logic lab=dn}
-C {ipin.sym} 470 570 2 1 {name=p38 lab=DN
+C {ipin.sym} 470 570 2 1 {name=p38 lab=dn
 }
 C {lab_pin.sym} 3140 1180 0 0 {name=p14 sig_type=std_logic lab=dn}
-C {iopin.sym} 470 410 2 0 {name=p39 lab=VDD}
-C {lab_pin.sym} 510 410 2 0 {name=p40 sig_type=std_logic lab=vdd}
-C {iopin.sym} 470 450 2 0 {name=p41 lab=GND}
-C {lab_pin.sym} 510 450 2 0 {name=p42 sig_type=std_logic lab=gnd}
+C {iopin.sym} 470 410 2 0 {name=p39 lab=vdd}
+C {iopin.sym} 470 450 2 0 {name=p41 lab=gnd}
 C {lab_pin.sym} 2540 980 0 0 {name=p43 sig_type=std_logic lab=dn}
 C {lab_pin.sym} 1570 980 0 0 {name=p11 sig_type=std_logic lab=dn}
-C {ipin.sym} 470 610 0 0 {name=p9 lab=DNB
+C {ipin.sym} 470 610 0 0 {name=p9 lab=dnb
 }
-C {lab_pin.sym} 510 610 2 0 {name=p44 sig_type=std_logic lab=dnb}
 C {lab_pin.sym} 1700 980 0 0 {name=p45 sig_type=std_logic lab=dnb}
 C {lab_pin.sym} 2410 980 0 0 {name=p10 sig_type=std_logic lab=dnb}
-C {ipin.sym} 470 530 0 0 {name=p12 lab=UPB
+C {ipin.sym} 470 530 0 0 {name=p12 lab=upb
 }
-C {lab_pin.sym} 510 530 2 0 {name=p46 sig_type=std_logic lab=upb}
-C {ipin.sym} 470 490 0 0 {name=p47 lab=UP
+C {ipin.sym} 470 490 0 0 {name=p47 lab=up
 }
-C {lab_pin.sym} 510 490 2 0 {name=p48 sig_type=std_logic lab=up}
 C {lab_pin.sym} 1700 460 0 0 {name=p49 sig_type=std_logic lab=upb}
 C {lab_pin.sym} 1570 460 0 0 {name=p50 sig_type=std_logic lab=up}
 C {lab_pin.sym} 2410 460 0 0 {name=p5 sig_type=std_logic lab=upb}
 C {lab_pin.sym} 2540 460 0 0 {name=p6 sig_type=std_logic lab=up}
 C {lab_pin.sym} 3060 260 0 0 {name=p7 sig_type=std_logic lab=upb}
-C {/home/kenrendell/Playground/phase-locked-loop/charge-pump/charge-pump-amplifier.sym} 1930 700 0 1 {name=A1}
+C {/home/kenrendell/Playground/phase-locked-loop/charge-pump/charge-pump-amplifier.sym} 1930 700 0 1 {name=A0}

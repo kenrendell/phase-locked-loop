@@ -297,6 +297,8 @@ N 220 720 240 720 {
 lab=GND}
 N 220 120 240 120 {
 lab=VDD}
+N 370 650 370 680 {
+lab=GND}
 C {sky130_fd_pr/pfet_01v8.sym} 600 490 0 0 {name=M1p
 L=0.15
 W=1
@@ -636,22 +638,32 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {opin.sym} 1950 360 0 0 {name=p3 lab=Vout}
-C {sky130_fd_pr/res_generic_l1.sym} 240 410 0 0 {name=Rb1
-W=1
-L=1
-model=res_generic_l1
-mult=1}
-C {sky130_fd_pr/res_generic_l1.sym} 370 410 0 0 {name=Rb2
-W=1
-L=1
-model=res_generic_l1
-mult=1}
-C {sky130_fd_pr/res_generic_l1.sym} 1720 400 3 0 {name=Rm
-W=1
-L=1
-model=res_generic_l1
-mult=1}
-C {sky130_fd_pr/cap_mim_m3_2.sym} 1790 400 3 0 {name=Cm model=cap_mim_m3_2 W=1 L=1 MF=1 spiceprefix=X}
-C {sky130_fd_pr/cap_mim_m3_2.sym} 1910 440 0 0 {name=CL model=cap_mim_m3_2 W=1 L=1 MF=1 spiceprefix=X}
 C {iopin.sym} 220 120 2 0 {name=p4 lab=VDD}
 C {iopin.sym} 220 720 2 0 {name=p5 lab=GND}
+C {capa.sym} 1910 440 0 0 {name=CL
+m=1
+value=1p
+footprint=1206
+device="ceramic capacitor"
+}
+C {capa.sym} 1790 400 3 0 {name=Cm
+m=1
+value=1p
+footprint=1206
+device="ceramic capacitor"
+}
+C {res.sym} 240 410 0 0 {name=Rb1
+value=500
+footprint=1206
+device=resistor
+m=1}
+C {res.sym} 370 410 0 0 {name=Rb2
+value=500
+footprint=1206
+device=resistor
+m=1}
+C {res.sym} 1720 400 3 0 {name=Rm
+value=500
+footprint=1206
+device=resistor
+m=1}
